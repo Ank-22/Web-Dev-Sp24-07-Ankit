@@ -5,4 +5,27 @@ body {
   body * {
     font-family: Arial, Helvetica, sans-serif;
   }
+  .wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
   
+  
+  .wd-flex-row-Body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wd-div-fill-space{
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .wd-div-with-all-margin-large{
+    margin: 5em;
+  }
