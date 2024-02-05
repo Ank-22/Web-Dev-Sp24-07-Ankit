@@ -1,0 +1,54 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+.wd-modules-button {
+  height: 37px;
+  width: 120px; /* Adjust the width as needed */
+  background-color: #6c757d; /* Grey color */
+  color: white; /* Text color */
+  margin: 2px;
+  align-content: center;
+}
+.wd-modules-button-red {
+  height: 37px;
+  width: 120px; /* Adjust the width as needed */
+  background-color: red; /* Grey color */
+  color: white; /* Text color */
+  margin: 2px;
+  align-content: center;
+}
+
+.wd-modules-div-button {
+  align-items: center;
+  align-content: center;
+  text-align: right;
+}
