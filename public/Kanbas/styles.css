@@ -29,3 +29,77 @@ body {
   .wd-div-with-all-margin-large{
     margin: 5em;
   }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 5px;
+  }
+
+.wd-breadcrumb{
+  margin-top: 13px;
+  margin-left: 5px;
+}
+
+  .wd-breadcrumb-item-link{
+    color: red;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: large;
+  }
+
+  .wd-breadcrumb-item-link-active{
+    color: black;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: large;
+  } 
+
+  .wd-hambuger-menu{
+    padding: 10px;
+    justify-content: center; 
+    align-self: center;
+  }
+
+  .wd-top-menu-bread{
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+  }
+  .wd-tittle-bar-black{
+    color: white;
+    background: #000;
+    width: 100%;
+    height: 7.5%;
+  }
+
+  .wd-small-top-tittle{
+    text-align: center;
+    vertical-align: baseline;
+    align-self:flex-end;
+  }
+  .wd-small-top-tittle p{
+    color: grey;
+    font-size: medium;
+  }
+
+ .wd-collapsed-nav-div{
+  height: 100%;
+  width: 100%;
+  
+ }
+
+ .wd-cs-btn-button{
+  height:40px ;
+  width: 100%;
+  font-size: 80%;
+ }
+ .wd-stack-button{
+  align-content: center;
+ }
+ div.wd-stack-button button.wd-cs-btn-button{
+  height:40px ;
+  width: 95%;
+  margin: 2px;
+  padding: 1px;
+  font-size: 80%;
+ }

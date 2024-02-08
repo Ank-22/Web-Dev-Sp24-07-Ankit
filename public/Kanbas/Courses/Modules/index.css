@@ -30,7 +30,13 @@
 .wd-modules > li {
   margin-bottom: 20px;
 }
+.wd-module-drop-button{
+  font-size: 90%;
+  height: 37px;
+  width: 120px;
+}
 .wd-modules-button {
+  font-size: 90%;
   height: 37px;
   width: 120px; /* Adjust the width as needed */
   background-color: #6c757d; /* Grey color */
@@ -39,6 +45,7 @@
   align-content: center;
 }
 .wd-modules-button-red {
+  font-size: 90%;
   height: 37px;
   width: 120px; /* Adjust the width as needed */
   background-color: red; /* Grey color */
