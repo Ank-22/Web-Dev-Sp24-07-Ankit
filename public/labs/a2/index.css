@@ -164,8 +164,6 @@ p#id-selector-2 {
 }
 .wd-pos-fixed {
   position: fixed;
-  right: 0px;
-  bottom: 50%;
 }
 .wd-zindex-bring-to-front {
   z-index: 10;
