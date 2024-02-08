@@ -1,0 +1,12 @@
+th {
+    border: solid;
+    background-color: lightgray;
+}
+
+td {
+    border: solid;
+}
+.red {
+    color: red;
+    border-color: black;
+}

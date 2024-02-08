@@ -213,20 +213,13 @@
                 </ul>
             </div>
             <div class="flex-fill">
-                <div class="d-flex wd-flex-row-s justify-content-end wd-modules-div-button">
-                    <button  class="btn btn-secondary wd-modules-button">Collapse All</button>
-                    <button  class="btn btn-secondary wd-modules-button">View Progress</button>
-                    <div class="dropdown p-1">
-                      <button class="btn btn-secondary dropdown-toggle wd-module-drop-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      View Status
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#"> <i class="fa fa-check-circle text-success"></i> Published</a></li>
-                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-xmark" style="color: #e7aa40;"></i> Unpublished</a></li>
-                      <li><a class="dropdown-item" href="#">All</a></li>
-                      </ul>
-                    </div>
-                    <button  class="btn btn-secondary wd-modules-button-red"><i class="fa-solid fa-plus"></i> Module</button>
+                <div class= justify-content-start wd-modules-div-button">
+                    <input type="text" class="form-control-sm" placeholder="Search Assignment" aria-label="SearchAssignment" aria-describedby="basic-addon1" style="float: left; font-variant: all-petite-caps;
+                    ">  
+                </div>
+                <div class="d-flex wd-flex-row-s justify-content-end wd-modules-div-button">  
+                    <button  class="btn btn-secondary wd-modules-button"><i class="fa-solid fa-plus"></i> Group</button>
+                    <button  class="btn btn-secondary wd-modules-button-red"><i class="fa-solid fa-plus"></i> Assignment</button>
                     <div class="dropdown p-1">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-ellipsis-v ms-2"></i>
@@ -240,82 +233,383 @@
                     <ul class="list-group wd-modules">
                       <li class="list-group-item">
                         <div>
-                          <i class="fa fa-ellipsis-v"></i> Assignments
-                          <span class="float-end">
+                          <i class="fa fa-ellipsis-v"></i> <b style="font-size: large;">Assignments
+                        </b>                          <span class="float-end">
+                            <span class="badge rounded-pill p-1"
+                                    style="color: black; border: solid 1px; border-color: gray;      width: 120px;
+                                    height: 20px;
+                                    text-align: center;
+                                    font-variant-caps: small-caps;
+                                    text-anchor: middle;">40% of Total</span>
                             <i class="fa fa-check-circle text-success"></i>
                             <i class="fa fa-plus ms-2"></i>
                             <i class="fa fa-ellipsis-v ms-2"></i>
                           </span>
                         </div>
                         <ul class="list-group">
-                          <li class="list-group-item">
-                            <i class="fa fa-ellipsis-v"></i> Assignment 1: What is Beyblade?
-                            <span class="float-end">
-                              <i class="fa fa-check-circle text-success"></i>
-                              <i class="fa fa-ellipsis-v ms-2"></i>
-                            </span>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>A1 What is Beyblade </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
                             </li>
-                              <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> Assignment 2: Different component of Beyblades.
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>A2 Beyblade Parts </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
                                 <span class="float-end">
-                                  <i class="fa fa-check-circle text-success"></i>
-                                  <i class="fa fa-ellipsis-v ms-2"></i>
-                                </span>  
-                              </li>
-                              <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> Assignment 3: Building your first Beyblade.
-                                <span class="float-end">
-                                  <i class="fa fa-check-circle text-success"></i>
-                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
                                 </span>
-                              </li>
-                              <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> Assignment 4: first Beyblade battle.
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>A3 Design your Beys </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
                                 <span class="float-end">
-                                  <i class="fa fa-check-circle text-success"></i>
-                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
                                 </span>
-                              </li>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"><a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"> <b>A4 Build your Beyblade </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"><a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"> <b>A5 Beyblade Battle </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                              
                         </ul>
                       </li>
                       <li class="list-group-item">
                         <div>
-                          <i class="fa fa-ellipsis-v"></i> Week 2
-                          <span class="float-end">
+                          <i class="fa fa-ellipsis-v"></i> <b style="font-size: large;">Quizzes
+                        </b>                          <span class="float-end">
+                            <span class="badge rounded-pill p-1"
+                                    style="color: black; border: solid 1px; border-color: gray;      width: 120px;
+                                    height: 20px;
+                                    text-align: center;
+                                    font-variant-caps: small-caps;
+                                    text-anchor: middle;">20% of Total</span>
                             <i class="fa fa-check-circle text-success"></i>
                             <i class="fa fa-plus ms-2"></i>
                             <i class="fa fa-ellipsis-v ms-2"></i>
                           </span>
                         </div>
                         <ul class="list-group">
-                          <li class="list-group-item">
-                            <i class="fa fa-ellipsis-v"></i> Learning Objectives
-                            <span class="float-end">
-                              <i class="fa fa-check-circle text-success"></i>
-                              <i class="fa fa-ellipsis-v ms-2"></i>
-                            </span>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"><a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"> <b>Q1 What is Beyblade </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
                             </li>
-                              <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> Introduction to the course
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>Q2 Beyblade Parts </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
                                 <span class="float-end">
-                                  <i class="fa fa-check-circle text-success"></i>
-                                  <i class="fa fa-ellipsis-v ms-2"></i>
-                                </span>  
-                              </li>
-                              <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> Learn what is Beyblade.
-                                <span class="float-end">
-                                  <i class="fa fa-check-circle text-success"></i>
-                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
                                 </span>
-                              </li>
-                              <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> Creating Beyblade Design.
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>Q3 Design your Beys </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
                                 <span class="float-end">
-                                  <i class="fa fa-check-circle text-success"></i>
-                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
                                 </span>
-                              </li>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"><a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"> <b>Q4 Build your Beyblade </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                            <li class="list-group-item p-1 ml-1 mr-1">
+                                <span style="padding-left: 48px"><a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"> <b>Q5 Beyblade Battle </b></a></span><br />
+                                <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                    class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                    class="fa-regular fa-pen-to-square"></i>
+                                <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    (9/5/2022) Module |</span>
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                      <div class="dropdown float-end">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                        </ul>
+                                      </div>
+                                </span>
+                                <br />
+                                <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                    style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                            </li>
+                        </ul>
+                              
+                            <li class="list-group-item">
+                                <div>
+                                  <i class="fa fa-ellipsis-v"></i> <b style="font-size: large;">Exam
+                                </b>                          <span class="float-end">
+                                    <span class="badge rounded-pill p-1"
+                                            style="color: black; border: solid 1px; border-color: gray;      width: 120px;
+                                            height: 20px;
+                                            text-align: center;
+                                            font-variant-caps: small-caps;
+                                            text-anchor: middle;">40% of Total</span>
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-plus ms-2"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                  </span>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item p-1 ml-1 mr-1">
+                                        <span style="padding-left: 48px"><a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"> <b>Exam 1 What is Beyblade </b></a></span><br />
+                                        <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                            class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                            class="fa-regular fa-pen-to-square"></i>
+                                        <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            (9/5/2022) Module |</span>
+                                        <span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                              <div class="dropdown float-end">
+                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                                </a>
+                                              
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item" href="#">Hide</a></li>
+                                                </ul>
+                                              </div>
+                                        </span>
+                                        <br />
+                                        <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                            style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                                    </li>
+                                    <li class="list-group-item p-1 ml-1 mr-1">
+                                        <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>Exam 2 Beyblade Parts </b></a></span><br />
+                                        <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                            class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                            class="fa-regular fa-pen-to-square"></i>
+                                        <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            (9/5/2022) Module |</span>
+                                        <span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                              <div class="dropdown float-end">
+                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                                </a>
+                                              
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item" href="#">Hide</a></li>
+                                                </ul>
+                                              </div>
+                                        </span>
+                                        <br />
+                                        <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                            style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                                    </li>
+                                    <li class="list-group-item p-1 ml-1 mr-1">
+                                        <span style="padding-left: 48px"> <a href="/Kanbas/Courses/Assignments/Editor/screen.html" style="text-decoration: none; color: black;"><b>Exam 3 Design your Beys </b></a></span><br />
+                                        <i class="fa fa-ellipsis-v"></i><i style="padding-right: 15px"
+                                            class="fa fa-ellipsis-v"></i><i style="color: green; padding-right: 5px"
+                                            class="fa-regular fa-pen-to-square"></i>
+                                        <span style="padding-bottom: 0px; font-size: small">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            (9/5/2022) Module |</span>
+                                        <span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                              <div class="dropdown float-end">
+                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v ms-2" style="color: black;"></i>
+                                                </a>
+                                              
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <li><a class="dropdown-item" href="/Kanbas/Courses/Assignments/Editor/screen.html">Edit</a></li>
+                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item" href="#">Hide</a></li>
+                                                </ul>
+                                              </div>
+                                        </span>
+                                        <br />
+                                        <span style="padding-left: 48px; font-size: small"><b>Due </b></span><span
+                                            style="font-size: small">Sep 18 2024 at 11:59pm | 100 pts</span>
+                                    </li>
+                                   
                         </ul>
                       </li>
                     </ul>
