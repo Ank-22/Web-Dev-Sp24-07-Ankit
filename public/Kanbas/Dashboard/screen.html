@@ -1,30 +1,132 @@
 <html>
   <head>
-    <title>Profile</title>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css" />
-    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
-  </head>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+</head>
   <body>
+    <!-- Implement links to Kanbas and Course Navigation -->
     <div class="wd-flex-row-body">
-     <div class="d-none d-sm-block">
+      <div class="d-flex">
+        <div class="d-none d-sm-block">
+          <ul class="wd-kanbas-navigation">
             <ul class="wd-kanbas-navigation">
-              <li><a href="http://northeastern.edu" id="wd-kanbas-navigation-logo">N</a></li>
-              <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa-solid fa-user-tie"></i><br \>Account</a></li>
+              <li>
+                <a href="http://northeastern.edu" id="wd-kanbas-navigation-logo"
+                  >N</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html"
+                  ><i class="fa-solid fa-user-tie"></i><br \ />Account</a
+                >
+              </li>
+              <li >
+                <a href="/Kanbas/Dashboard/screen.html">
+                  <i class="fa-solid fa-gauge-high"></i><br \ />
+                  Dashboard</a
+                >
+              </li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Home/screen.html"
+                  ><i class="fa-solid fa-book-journal-whills"></i><br \ />
+                  Courses</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-calendar"></i><br \ />
+                  Calendar</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-inbox"></i><br \ />
+                  Inbox</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-clock-rotate-left"></i><br \ />
+                  History</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-photo-film"></i><br \ />
+                  Studio</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-cube"></i><br \ />
+                  Commons</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-question"></i><br \ />
+                  Help</a
+                >
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+        <div class="flex-grow-1">
+          
+          <div class="d-none d-sm-block">
+          </div>
+          <div class="d-sm-none wd-tittle-bar-black wd-flex-row-body">
+            <div class="wd-hambuger-menu">
+              <a data-bs-toggle="collapse" href="#collapseKanbasMenu" role="button" aria-expanded="false" aria-controls="collapseKanbasMenu">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+              </a>
+          </div>
+          <div class="flex-fill wd-small-top-tittle">
+             
+            Dashboard
+           
+          </div>
+          <div class="wd-hambuger-menu">
+            <i class="fa-solid fa-glasses fa-xl" style="color: #ffffff;"></i>
+          </div>
+          
+          </div>
+          <div class="collapse wd-collapsed-nav-div" id="collapseKanbasMenu">
+            <ul class="wd-collapsed-nav">
+              <a data-bs-toggle="collapse" href="#collapseKanbasMenu" role="button" aria-expanded="false" aria-controls="collapseKanbasMenu" style="float: right;">
+                <i class="fa-solid fa-xmark fa-xl" style="color:gray;"></i>
+              </a>
+              <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa-solid fa-user-tie"></i>  Account</a></li>
               <li class="wd-active">
                 <a href="/Kanbas/Dashboard/screen.html">
-                  <i class="fa-solid fa-gauge-high"></i><br \> Dashboard</a>
+                  <i class="fa-solid fa-gauge-high"></i> Dashboard</a>
               </li>
-              <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book-journal-whills"></i><br \> Courses</a> </li>
-              <li><a href="#"><i class="fa-regular fa-calendar"></i><br \> Calendar</a></li>
-              <li><a href="#"><i class="fa-solid fa-inbox"></i><br \> Inbox</a></li>
-              <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i><br \> History</a></li>
-              <li><a href="#"><i class="fa-solid fa-photo-film"></i><br \> Studio</a></li>
-              <li><a href="#"><i class="fa-solid fa-cube"></i><br \> Commons</a></li>
-              <li><a href="#"><i class="fa-solid fa-question"></i><br \> Help</a></li>
+              <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book-journal-whills"></i>  Courses</a> </li>
+              <li><a href="#"><i class="fa-regular fa-calendar"></i>Calendar</a></li>
+              <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+              <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+              <li><a href="#"><i class="fa-solid fa-photo-film"></i> Studio</a></li>
+              <li><a href="#"><i class="fa-solid fa-cube"></i>  Commons</a></li>
+              <li><a href="#"><i class="fa-solid fa-question"></i> Help</a></li>
             </ul>
-     </div>
+          </div>
           <div class="wd-div-fill-space">
             <div class="p-4">
                 <h1>Dashboard</h1> <hr />
@@ -152,6 +254,9 @@
                 </div>
               </div>
           </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
