@@ -12,23 +12,18 @@
   }
   .wd-kanbas-navigation li.wd-active {
     background-color: white;
-    color: red;
   }
   .wd-kanbas-navigation li.wd-active a {
     color: red;
   }
   .wd-kanbas-navigation a {
-    color: white;
+    color: red;
     text-decoration: none;
   }
-  .wd-kanbas-navigation a i {
-    color: red;
-    font-size: 2em;
-    margin-bottom: 5px;
-  }
+
 #wd-kanbas-navigation-logo{
     font-size:5em;
     font-family: fangsong;
     color: red;
     font-weight: bold;
-}
+}  
