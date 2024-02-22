@@ -4,6 +4,8 @@
     padding: 0px;  margin: 0px;
     width: 80px;
     height: 100vh;
+    position: fixed;
+    top: 0;
   }
  
   .wd-kanbas-navigation li {
@@ -20,10 +22,26 @@
     color: red;
     text-decoration: none;
   }
+  .wd-flex-body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-#wd-kanbas-navigation-logo{
-    font-size:5em;
-    font-family: fangsong;
-    color: red;
-    font-weight: bold;
-}  
+.wd-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-flex-nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  height: 4%;
+}
