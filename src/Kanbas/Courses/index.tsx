@@ -26,11 +26,12 @@ function Courses() {
   return (
     <div style={{width:"99%"}}>
       <div className="row d-none d-md-block">
-        <div className="col" style={{ paddingLeft: "30px" }}>
+      <div className="wd-flex">
+      <div className="col" style={{ paddingLeft: "30px" }}>
           <h1 style={{ color: "red", fontSize: "20px", paddingTop: "20px" }} ><HiMiniBars3 /> Course: {course?.name} <span style={{ color: "black" }}>&gt; {breadcrumb}</span></h1>
         </div>
         <div className="col" style={{paddingTop: "10px"}}>
-          <span style={{ textAlign: "right", float: "inline-end" }}>
+          <span style={{ textAlign: "right", float: "right" }}>
             <button
               style={{ backgroundColor: "lightgray", color: "black", borderColor: "gray" }}
               type="button"
@@ -41,6 +42,7 @@ function Courses() {
           </span>
          
         </div>
+      </div>
         </div>
 
         <hr style={{marginTop:"10px"}} className="d-none d-md-block"/>  
