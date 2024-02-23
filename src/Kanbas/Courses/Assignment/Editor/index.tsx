@@ -11,7 +11,7 @@ function AssignmentEditor() {
     const navigate = useNavigate();
     const handleSave = () => {
         console.log("Actually saving assignment TBD in later assignments");
-        navigate('/Kanbas/Courses/${courseId}/Assignments');
+        navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
     return (
         <div>
@@ -149,7 +149,7 @@ function AssignmentEditor() {
             <div style={{ marginLeft: '10px' }}>
                 <div className="wd-flex-row-container wd-flex-grow-1" style={{ float: 'right' }}>
 
-                    <Link to={'/Kanbas/Courses/${courseId}/Assignments'}
+                    <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
                         className="btn btn-danger float-end">
                         Cancel
                     </Link>
