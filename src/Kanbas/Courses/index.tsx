@@ -10,7 +10,9 @@ import { FaGlasses } from "react-icons/fa";
 import "./index.css";
 import Grades from "./Grades";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { useSelector, useDispatch } from "react-redux";
+import { KanbasState } from "../store";
+import AssignmentAddEditor from "./Assignment/assignmentAddEditor";
 
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
@@ -19,6 +21,10 @@ function Courses({ courses }: { courses: any[]; }) {
   const listurl = page.split("/");
   console.log(listurl.length);
   let breadcrumb = listurl[listurl.length - 1];
+  const AssignmentList = useSelector((state: KanbasState) =>
+        state.assignmentsReducer.assignments);
+    const assignment = useSelector((state: KanbasState) =>
+        state.assignmentsReducer.assignment);
   const lastSECOND = listurl[listurl.length - 2];
   if(lastSECOND == "Assignments"){
     const assignmentName = assignments.find((assignment) => assignment._id=== listurl[listurl.length-1]);
@@ -62,6 +68,7 @@ function Courses({ courses }: { courses: any[]; }) {
             <Route path="Assignments" element={<Assignments/>} />
             <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>}/>
             <Route path="Grades" element={<Grades />} />
+            <Route path="Assignments/add" element={<AssignmentAddEditor/>}/>
           </Routes>
         </div>
       </div>
