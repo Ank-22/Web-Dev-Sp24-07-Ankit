@@ -4,15 +4,14 @@ import CounterRedux from "./CounterRedux";
 import AddRedux from "./AddRedux";
 
 const ReduxExamples = () => {
-  return(
+  return (
     <div>
       <h2>Redux Examples</h2>
-      <HelloRedux/>
-      <CounterRedux/>
-      <AddRedux/>
-      </div>
+      <HelloRedux />
+      <CounterRedux />
+      <AddRedux />
+    </div>
   );
 };
 
 export default ReduxExamples;
-
