@@ -3,7 +3,7 @@ import PathParameters from "./routing/PathParameters";
 import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
-import Highlight from "../a3/HighLight";
+import Highlight from "./HighLight";
 import Add from "./Add";
 import TodoList from "./todos/TodoList";
 import { useSelector } from "react-redux";
