@@ -11,7 +11,8 @@ import "./index.css";
 import Grades from "./Grades";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Courses() {
+
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   const page = window.location.href;
