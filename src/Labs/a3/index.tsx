@@ -2,12 +2,13 @@ import JavaScript from "./JavaScript";
 import PathParameters from "./routing/PathParameters";
 import Classes from "./Classes";
 import Styles from "./Styles";
-import Add from "./Add";
 import ConditionalOutput from "./ConditionalOutput";
+import Highlight from "./Highlight";
+import Add from "./add";
 import TodoList from "./todos/TodoList";
 import { useSelector } from "react-redux";
 import { LabState } from "../store";
-import Highlight from "./HighLight";
+
 
 
 function Assignment3() {
