@@ -7,6 +7,8 @@ import "./index.css";
 import MinNav from "./Navigation/minNav";
 import db from "./Database";
 import { useState } from "react";
+import store from "./store";
+import { Provider } from "react-redux";
 
 function Kanbas() {
   const [courses, setCourses] = useState<any[]>(db.courses);
@@ -33,6 +35,7 @@ function Kanbas() {
   };
 
   return (
+    <Provider store={store}>
     <div>
       <MinNav />
       <div className="d-flex">
@@ -58,5 +61,6 @@ function Kanbas() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </div>
     </div>
+    </Provider>
 );}
 export default Kanbas;

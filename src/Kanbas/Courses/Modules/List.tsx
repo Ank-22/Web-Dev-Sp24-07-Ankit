@@ -1,24 +1,55 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
-import { modules } from "../../Database";
-import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaRegCheckCircle, FaPlus, FaGripVertical, FaCaretRight, FaCaretDown } from "react-icons/fa";
+import {
+    FaEllipsisV,
+    FaCheckCircle,
+    FaPlusCircle,
+    FaRegCheckCircle,
+    FaPlus,
+    FaGripVertical,
+    FaCaretRight,
+    FaCaretDown,
+} from "react-icons/fa";
 import { useParams } from "react-router";
-import { FaArrowRight, FaGrip } from "react-icons/fa6";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle'
-
-
+import { useSelector, useDispatch } from "react-redux";
+import {
+    addModule,
+    deleteModule,
+    updateModule,
+    setModule,
+} from "./reducer";
+import { KanbasState } from "../../store";
 
 function ModuleList() {
-  const { courseId } = useParams();
-  const modulesList = modules.filter((module) => module.course === courseId);
-  const [selectedModule, setSelectedModule] = useState(modulesList[0]);
-  return (
-    <>
-      {/* <!-- Add buttons here --> */}
-      <div className="d-flex justify-content-end">
-                <button style={{ borderColor: "gray", backgroundColor: "lightgray" }} type="button" className="btn custom-btn-outline me-2">Collapse All</button>
-                <button style={{ borderColor: "gray", backgroundColor: "lightgray" }} type="button" className="btn custom-btn-outline me-2">View Progress</button>
+    const { courseId } = useParams();
+    const moduleList = useSelector((state: KanbasState) =>
+        state.modulesReducer.modules);
+        console.log(moduleList);
+    const selectedModule = useSelector((state: KanbasState) =>
+        state.modulesReducer.module);
+    const dispatch = useDispatch();
+    // dispatch(setModule(moduleList.filter((module) => module.course === courseId)[0]));
+    // const modulesList = db.modules.filter((module) => module.course === courseId);
+    // const [selectedModule, setSelectedModule] = useState(modulesList[0])
+    // useEffect(()=>{console.log("Initial Render");},[]);
+    return (
+
+        <>
+            <div className="d-flex justify-content-end">
+                <button
+                    style={{ borderColor: "gray", backgroundColor: "lightgray" }}
+                    type="button"
+                    className="btn custom-btn-outline me-2"
+                >
+                    Collapse All
+                </button>
+                <button
+                    style={{ borderColor: "gray", backgroundColor: "lightgray" }}
+                    type="button"
+                    className="btn custom-btn-outline me-2"
+                >
+                    View Progress
+                </button>
                 {/* <select style={{ border: "solid" }} className="btn custom-btn-outline me-2">
                     <option value="VAL1">
                      <FaCheckCircle className="text-success" />Publish All
@@ -38,46 +69,102 @@ function ModuleList() {
                     >
                         <FaRegCheckCircle className="text-success" /> Publish All
                     </button>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1"></ul>
+                    <ul
+                        className="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                    ></ul>
                 </div>
-                <button style={{ border: "solid", backgroundColor: "red", color: "white" }} type="button" className="btn custom-btn-module"><FaPlus className="ms-2" /> Module</button>
-                <button style={{ borderColor: "gray", backgroundColor: "lightgray", color: "black" }} type="button" className="btn custom-btn-module"><FaEllipsisV className="ms-2" /></button>
+                <button
+                    style={{ border: "solid", backgroundColor: "red", color: "white" }}
+                    type="button"
+                    className="btn custom-btn-module"
+                >
+                    <FaPlus className="ms-2" /> Module
+                </button>
+                <button
+                    style={{
+                        borderColor: "gray",
+                        backgroundColor: "lightgray",
+                        color: "black",
+                    }}
+                    type="button"
+                    className="btn custom-btn-module"
+                >
+                    <FaEllipsisV className="ms-2" />
+                </button>
             </div>
+            <hr />
+            <input className="input-textarea-style" style={{border: "solid"}}
+                        value={selectedModule.name}
+                        onChange={(e) =>
+                            dispatch(setModule({ ...selectedModule, name: e.target.value }))
+                        }
+                    />
+                    <button style={{ float: "inline-end", border: "none"}} type="button" className="btn-update" onClick={() => dispatch(updateModule(selectedModule))}>Update</button>
+
+                    <button style={{ float: "inline-end", border: "none" }} type="button" className="btn-add"
+                        onClick={() => dispatch(addModule({ ...selectedModule, course: courseId }))}>
+                        Add
+                    </button>
+                    <br />
+                    <br />
+                    <textarea className="input-textarea-style" style={{border: "solid"}}
+                        value={selectedModule.description}
+                        onChange={(e) =>
+                            dispatch(setModule({ ...selectedModule, description: e.target.value }))
+                        }
+                    />
+            {/* <!-- Add buttons here --> */}
+            <ul style={{ width: "99%" }} className="list-group wd-modules">
+                <li className="list-group-item">
 
 
-      <ul className="list-group wd-modules">
-        {modulesList.map((module, index) => (
-          <li key={index}
-            className="list-group-item"
-            onClick={() => setSelectedModule(module)}>
-            <div>
-              <FaEllipsisV className="me-2" />
-              {module.name}
-              <span className="float-end">
-                <FaCheckCircle className="text-success" />
-                <FaPlusCircle className="ms-2" />
-                <FaEllipsisV className="ms-2" />
-              </span>
-            </div>
-            {selectedModule._id === module._id && (
-              <ul className="list-group">
-                {module.lessons?.map((lesson, index) => (
-                  <li className="list-group-item" key={index}>
-                    <FaEllipsisV className="me-2" />
-                    {lesson.name}
-                    <span className="float-end">
-                      <FaCheckCircle className="text-success" />
-                      <FaEllipsisV className="ms-2" />
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
-    </>
-  );
+                    
+                </li>
+
+                {moduleList
+                    .filter((module) => module.course === courseId)
+                    .map((module, index) => (
+                        <li key={index} className="list-group-item" onClick={() => { console.log(module);dispatch(setModule(module)); }}>
+                            <button style={{ border: "none" , float:"inline-end"}} type="button" className="btn-edit"
+                                onClick={(event) => { dispatch(setModule(module)); }}>
+                                Edit
+                            </button>
+
+                            <button style={{  border: "none", float:"inline-end" }} type="button" className="btn-delete" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                            <br/>
+                            <br/>
+
+                            <div>
+                                <FaGripVertical className="me-2" />
+                                <FaCaretRight />
+                               <strong> {module.name}</strong>
+                                <span className="float-end">
+                                    <FaCheckCircle className="text-success" />
+                                    <FaCaretDown />
+                                    <FaPlusCircle className="ms-2" />
+                                    <FaEllipsisV className="ms-2" />
+                                </span>
+                            </div>
+                            {selectedModule._id === module._id && (
+                                <ul className="list-group">
+                                    {module.lessons?.map((lesson: { name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => (
+                                        <li className="list-group-item">
+                                            <FaGripVertical className="me-2" />
+                                            <span style={{ paddingLeft: "20px" }}>{lesson.name}</span>
+                                            <span className="float-end">
+                                                <FaCheckCircle className="text-success" />
+                                                <FaEllipsisV className="ms-2" />
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+
+                        </li>
+                    ))}
+            </ul>
+        </>
+    );
 }
 export default ModuleList;
-
