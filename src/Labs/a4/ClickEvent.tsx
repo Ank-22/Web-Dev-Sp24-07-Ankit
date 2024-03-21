@@ -20,18 +20,6 @@ function ClickEvent() {
         >
           Click Hello 3
         </button>
-        
-        {/* EXTRAS */}
-        <button onClick={() => lifeIs("superb!!")}>
-            Click Hello 4
-        </button>
-        <button onClick={hello}>
-            Click Hello 5
-        </button>
-
-        <button onClick={() => alert("I am not good!!")}>
-            Click Hello 6
-        </button>
       </div>
     );
   }
