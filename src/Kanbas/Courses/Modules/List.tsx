@@ -126,12 +126,12 @@ function ModuleList() {
                     .filter((module) => module.course === courseId)
                     .map((module, index) => (
                         <li key={index} className="list-group-item" onClick={() => { console.log(module);dispatch(setModule(module)); }}>
-                            <button style={{ border: "none" , float:"inline-end"}} type="button" className="btn-edit"
+                            <button style={{ border: "none"}} type="button" className="btn-edit float-end"
                                 onClick={(event) => { dispatch(setModule(module)); }}>
                                 Edit
                             </button>
 
-                            <button style={{  border: "none", float:"inline-end" }} type="button" className="btn-delete" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                            <button style={{  border: "none" }} type="button" className="btn-delete float-end" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
                             <br/>
                             <br/>
 
@@ -139,11 +139,14 @@ function ModuleList() {
                                 <FaGripVertical className="me-2" />
                                 <FaCaretRight />
                                <strong> {module.name}</strong>
+                               <br />
+                                <span style={{marginLeft: "40px"}}> Description: {module.description} </span>
                                 <span className="float-end">
                                     <FaCheckCircle className="text-success" />
                                     <FaCaretDown />
                                     <FaPlusCircle className="ms-2" />
                                     <FaEllipsisV className="ms-2" />
+                            
                                 </span>
                             </div>
                             {selectedModule._id === module._id && (
